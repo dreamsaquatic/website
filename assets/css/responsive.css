@@ -1,0 +1,299 @@
+/*==================================================
+    DREAMS AQUATIC
+    Responsive Stylesheet
+==================================================*/
+
+
+/*==========================================
+    Laptop
+==========================================*/
+
+@media (max-width:1200px){
+
+    .hero-container{
+
+        gap:50px;
+
+    }
+
+    .about-wrapper,
+    .features-wrapper{
+
+        gap:50px;
+
+    }
+
+}
+
+
+/*==========================================
+    Tablet
+==========================================*/
+
+@media (max-width:992px){
+
+    section{
+
+        padding:90px 0;
+
+    }
+
+    .hero-container,
+    .about-wrapper,
+    .features-wrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .hero-content{
+
+        text-align:center;
+
+        order:2;
+
+    }
+
+    .hero-content p{
+
+        margin-inline:auto;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .hero-visual{
+
+        order:1;
+
+        min-height:500px;
+
+    }
+
+    .hero-social{
+
+        display:flex;
+
+        gap:18px;
+
+        left:50%;
+
+        transform:translateX(-50%);
+
+        bottom:15px;
+
+    }
+
+    .feature-list{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .contact-wrapper{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .footer-wrapper{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .footer-brand p{
+
+        margin:auto;
+
+    }
+
+}
+
+/*==========================================
+    Mobile
+==========================================*/
+
+@media (max-width:768px){
+
+    h1{
+
+        font-size:clamp(2.5rem,9vw,3.5rem);
+
+    }
+
+    h2{
+
+        font-size:2.3rem;
+
+    }
+
+    .navbar{
+
+        height:72px;
+
+    }
+
+    .nav-menu{
+
+        position:fixed;
+
+        top:72px;
+
+        right:-100%;
+
+        width:280px;
+
+        height:calc(100vh - 72px);
+
+        background:rgba(8,20,32,.96);
+
+        backdrop-filter:blur(25px);
+
+        flex-direction:column;
+
+        justify-content:flex-start;
+
+        align-items:flex-start;
+
+        padding:40px;
+
+        gap:28px;
+
+        transition:.35s;
+
+    }
+
+    .nav-menu.active{
+
+        right:0;
+
+    }
+
+    .menu-toggle{
+
+        display:flex;
+
+    }
+
+    .floating-card{
+
+        display:none;
+
+    }
+
+    .hero-circle-2{
+
+        display:none;
+
+    }
+
+    .experience-card{
+
+        position:relative;
+
+        right:0;
+
+        bottom:0;
+
+        margin-top:25px;
+
+    }
+
+    .product-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .contact-wrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .dimension-item{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:8px;
+
+    }
+
+    .experience-social{
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:14px;
+
+        margin-left:40px;
+
+    }
+}
+
+/*==========================================
+    Small Mobile
+==========================================*/
+
+@media (max-width:480px){
+
+    .container{
+
+        width:94%;
+
+    }
+
+    section{
+
+        padding:70px 0;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+    }
+
+
+    .section-title{
+
+        margin-bottom:50px;
+
+    }
+
+    .feature-box{
+
+        padding:22px;
+
+    }
+
+    .product-content{
+
+        padding:22px;
+
+    }
+
+    .contact-card a{
+
+        padding:30px;
+
+    }
+
+}
